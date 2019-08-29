@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="40dp"
+        android:text="DASHBOARD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/bgNews"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/bgEvent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bgSchedule"
+        app:layout_constraintEnd_toStartOf="@+id/bgEvent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bgSchedule"
+        app:srcCompat="@color/BlackUAJY" />
+
+    <ImageView
+        android:id="@+id/news"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgNews"
+        app:layout_constraintEnd_toEndOf="@+id/bgNews"
+        app:layout_constraintStart_toStartOf="@+id/bgNews"
+        app:layout_constraintTop_toTopOf="@+id/bgNews"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/news" />
+
+    <TextView
+        android:id="@+id/txtNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="NEWS"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bgNews"
+        app:layout_constraintEnd_toEndOf="@+id/bgNews"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/bgNews" />
+
+    <ImageView
+        android:id="@+id/bgEvent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bgSchedule"
+        app:layout_constraintEnd_toEndOf="@+id/bgSchedule"
+        app:srcCompat="@color/KuningUAJY" />
+
+    <ImageView
+        android:id="@+id/event"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgEvent"
+        app:layout_constraintEnd_toEndOf="@+id/bgEvent"
+        app:layout_constraintStart_toStartOf="@+id/bgEvent"
+        app:layout_constraintTop_toTopOf="@+id/bgEvent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/event" />
+
+    <TextView
+        android:id="@+id/txtEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="EVENT"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bgEvent"
+        app:layout_constraintEnd_toEndOf="@+id/bgEvent"
+        app:layout_constraintStart_toStartOf="@+id/bgEvent" />
+
+    <ImageView
+        android:id="@+id/bgSchedule"
+        android:layout_width="316dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@color/BlueUAJY" />
+
+    <ImageView
+        android:id="@+id/schedule"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgSchedule"
+        app:layout_constraintEnd_toEndOf="@+id/bgSchedule"
+        app:layout_constraintStart_toStartOf="@+id/bgSchedule"
+        app:layout_constraintTop_toTopOf="@+id/bgSchedule"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/schedule" />
+
+    <TextView
+        android:id="@+id/txtSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="STUDENT SCHEDULE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bgSchedule"
+        app:layout_constraintEnd_toEndOf="@+id/bgSchedule"
+        app:layout_constraintStart_toStartOf="@+id/bgSchedule" />
+</android.support.constraint.ConstraintLayout>

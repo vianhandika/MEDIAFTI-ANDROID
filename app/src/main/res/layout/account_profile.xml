@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="321dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        app:srcCompat="@android:color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="268dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/boy"
+        app:civ_border_color="@color/KuningUAJY"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/btnImgProfile"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        app:srcCompat="@drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="208dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txtResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Change Password?"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/KuningUAJY"
+        android:text="UPDATE PROFILE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="20dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textEmail"
+        app:layout_constraintEnd_toStartOf="@+id/textEmail"
+        app:layout_constraintTop_toTopOf="@+id/textEmail"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textUsername"
+        app:layout_constraintEnd_toStartOf="@+id/textUsername"
+        app:layout_constraintTop_toTopOf="@+id/textUsername"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="20dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/textPassword"
+        app:layout_constraintTop_toTopOf="@+id/textPassword"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/password" />
+
+</android.support.constraint.ConstraintLayout>

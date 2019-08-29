@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="DASHBOARD" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="NEWS" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="EVENT" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="STUDENT SCHEDULE" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="ACCOUNT PROFILE" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="ABOUT" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_arrow_forward_black_24dp"
+                android:title="LOGOUT" />
+        </menu>
+    </item>
+
+</menu>

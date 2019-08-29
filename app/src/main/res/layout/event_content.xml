@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#cfcfcf"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:background="#FFFFFFFF"
+            android:scaleType="centerCrop"
+            android:scrollY="-125dp"/>
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="From"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#FFFFFFFF"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:text="Tittle"/>
+
+        <TextView
+            android:id="@+id/eventPlace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFFFF"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:text="Place " />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

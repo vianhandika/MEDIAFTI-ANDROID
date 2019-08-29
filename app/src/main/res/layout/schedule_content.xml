@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cfcfcf"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_dark"
+            android:text="Day"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvSesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session" />
+
+        <TextView
+            android:id="@+id/tvMatkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:text="Course" />
+
+        <TextView
+            android:id="@+id/tvRuang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
